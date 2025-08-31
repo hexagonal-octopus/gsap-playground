@@ -1,0 +1,80 @@
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100svh;
+}
+
+body {
+  background: #313131;
+  color: #f2f2f2;
+  font-family: "Inter", sans-serif;
+  line-height: 145%;
+  font-size: 1rem;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-section .inner {
+  min-height: 100svh;
+}
+
+.hero-section .container {
+  padding: 100px 60px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section h1 {
+  font-weight: 500;
+  max-width: 80%;
+  color: #d1d1d1;
+  font-size: 6rem;
+  line-height: 0.9;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  letter-spacing: -4px;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.hero-section p:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1px;
+  background: #d1d1d1;
+}
+
+[text-split] {
+  opacity: 0;
+}
+
+.word {
+  overflow: hidden;
+  padding-bottom: 0.1em;
+  margin-bottom: -0.1em;
+  transform-origin: bottom;
+  display: inline-block;
+}
